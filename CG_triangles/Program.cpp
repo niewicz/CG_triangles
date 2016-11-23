@@ -77,7 +77,10 @@ void renderScene(void)
 		drawAndAnimateTriangle(angleObject, -2 * displacement, displacement, -1.0f, 0.0f, -2.0f, 1.0f, colorGreen);
 		drawAndAnimateTriangle(angleObject, -displacement, -2 * displacement, 0.0f, -1.0f, -1.0f, -2.0f, colorGreen);
 		drawAndAnimateTriangle(angleObject, 2 * displacement, -displacement, 1.0f, 0.0f, 2.0f, -1.0f, colorGreen);
-
+	glPopMatrix();
+		
+	glPushMatrix();
+	glRotatef(2 * angleCenter, 0.0f, 0.0f, 1.0f);
 		// 4 outer red
 		drawAndAnimateTriangle(angleObject, displacement, 3 * displacement, 0.0f, 2.0f, 1.0f, 3.0f, colorRed);
 		drawAndAnimateTriangle(angleObject, 3 * displacement, -displacement, 2.0f, 0.0f, 3.0f, -1.0f, colorRed);
