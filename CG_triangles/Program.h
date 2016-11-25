@@ -27,6 +27,7 @@ float angleObject = 0.0f;
 float displacement = 0.5f;
 unsigned int counter = 0;
 
+void update(int value);
 void paintTraingle(float x_1, float y_1, float x_2, float y_2, Color *color);
 void rotateTraingle(float anglel, float displacement_x, float displacement_y, float around_x, float around_y);
 void drawAndAnimateTriangle(float anglel, float displacement_x, float displacement_y, float x_1, float y_1, float x_2, float y_2, Color *color);
